@@ -1,13 +1,15 @@
 Algorithms Unlocked Impmlementation
 ==================================
 
-##Description
-A C#.NET implementation of (algorithms unlocked) by Thomas H. Cormen.
 
-[book page:](https://mitpress.mit.edu/books/algorithms-unlocked)
+###Description
+A C#.NET implementation of (algorithms unlocked) by Prof. Thomas H. Cormen.
 
-##Demo
+[(book page)](https://mitpress.mit.edu/books/algorithms-unlocked)
 
 
-##TODO
+###Demo
+
+
+###TODO
 * "Data Compression" chapter.
