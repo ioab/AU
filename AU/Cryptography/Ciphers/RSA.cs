@@ -167,6 +167,7 @@
         /// </summary>
         private void ComputeEAndD()
         {
+            // Should start from 3 not 5 .. But it is 5 just to ensure the book example exact match //
             for (uint i = 5; i < this._r; i = i + 2)
             {
                 var candidateE = Euclid.Compute((long)this._r, (long)i);
