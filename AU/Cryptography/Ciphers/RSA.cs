@@ -167,12 +167,8 @@
         /// </summary>
         private void ComputeEAndD()
         {
-            uint i;
-
-            while (true)
+            for (uint i = 5; i < this._r; i = i + 2)
             {
-                i = (uint)new Random().Next(3, (int)this._r);
-
                 var candidateE = Euclid.Compute((long)this._r, (long)i);
 
                 if (candidateE.Item1 == 1)
@@ -196,7 +192,7 @@
 
                     break;
                 }
-            };
+            }
         }
 
         /// <summary>
