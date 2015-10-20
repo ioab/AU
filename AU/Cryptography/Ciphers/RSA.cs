@@ -141,7 +141,7 @@
         /// </summary>
         private void GeneratePrimes()
         {
-            
+
             do
             {
                 uint i = (uint)new Random().Next(3, (int)Range - 1);

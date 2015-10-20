@@ -90,7 +90,7 @@
 
             var bob = rsa2.FP(alice);
 
-            Console.WriteLine("Ecy : {0} \nDec : {1}", alice, bob);
+            Console.WriteLine("Ecy : {0} \nDec : {1}.", alice, bob);
 
             Console.WriteLine(rsa2);
         }
