@@ -26,13 +26,13 @@
 
             #region Algorithms on Strings
 
-            AlgorithmsOnStrings.Demo();
+            //AlgorithmsOnStrings.Demo();
 
             #endregion
 
             #region Cryptography
 
-            //Cryptography.Demo();
+            Cryptography.Demo();
 
             #endregion
 

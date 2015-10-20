@@ -47,14 +47,14 @@
         /// Used to encrypt plain-texts by any party who wants to contact with the owner.
         /// </summary>
         /// <remarks>Known publicly. Pass it to anyone.</remarks>
-        public Func<uint, uint> FS { get; private set; }
+        public Func<uint, uint> FP { get; private set; }
 
         /// <summary>
         /// The Private-Key function.
         /// Used to decrypt cipher-texts by the owner only.
         /// </summary>
         /// <remarks>Revealed to nobody. Accessibility is public, so the owner can use it for decrypt.</remarks>
-        public Func<uint, uint> FP { get; private set; }
+        public Func<uint, uint> FS { get; private set; }
 
         /// <summary>
         /// A pluggable primality test function to used internally by RSA.
@@ -75,6 +75,7 @@
 
         /// <summary>
         /// The initializer of RSA cryptosystem.
+        /// A version enables the encipherer to provide her initial p and q.
         /// </summary>
         /// <param name="p">A prime integer.</param>
         /// <param name="q">Another prime integer.</param>
@@ -98,6 +99,7 @@
 
         /// <summary>
         /// The initializer of RSA cryptosystem.
+        /// p and q are generated automatically in this overload.
         /// </summary>
         /// <param name="range">A range m to search for prime numbers under it.</param>
         /// <param name="primalityTest">An optional plugin primality test algorithm. Defaults to naive division.</param>
@@ -130,8 +132,8 @@
             ComputeEAndD();
 
             // Define the RSA cryptosystem (E/D) functions //
-            FP = (x) => (uint)ModularExponentiation.Compute(x, _e, _n);
-            FS = (x) => (uint)ModularExponentiation.Compute(x, _d, _n);
+            FS = (x) => (uint)ModularExponentiation.Compute(x, _e, _n);
+            FP = (x) => (uint)ModularExponentiation.Compute(x, _d, _n);
         }
 
         /// <summary>

@@ -72,10 +72,10 @@
 
             Console.WriteLine("PK : " + rsa.PublicKey + "\nSK : " + rsa.PrivateKey);
 
-            var rsaCipherText = rsa.FP(327);
+            var rsaCipherText = rsa.FS(327);
             Console.WriteLine("Encrypted : {0}", rsaCipherText);
 
-            var rsaPlainText = rsa.FS(rsaCipherText);
+            var rsaPlainText = rsa.FP(rsaCipherText);
             Console.WriteLine("Decrypted : {0}", rsaPlainText);
 
             Console.WriteLine(rsa);
@@ -86,9 +86,9 @@
             var rsa2 = new RSA(500u);
             rsa2.Compute();
 
-            var alice = rsa2.FP(49);
+            var alice = rsa2.FS(49);
 
-            var bob = rsa2.FS(alice);
+            var bob = rsa2.FP(alice);
 
             Console.WriteLine("Ecy : {0} \nDec : {1}", alice, bob);
 
