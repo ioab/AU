@@ -10,9 +10,9 @@ A C#.NET implementation of (algorithms unlocked) by Prof. Thomas H. Cormen.
 
 ###Demo
 Demo project serves as a sample testing for the algorithms library code.
-Demo.cs is works as gate to the divided testing modules.
+Demo.cs is a gate to the divided testing modules.
 
-* Sample (Finite automaton string matching):
+* Sample Function (finite automaton string matching):
 
 ```C#
 var nextState = Matching.BuildNextStateTable("AAC");
