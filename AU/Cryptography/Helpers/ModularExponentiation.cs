@@ -11,9 +11,9 @@
         /// <summary>
         /// The modular exponentiation procedure.
         /// </summary>
-        /// <param name="x">A nonnegative ulongeger.</param>
-        /// <param name="d">A nonnegative ulongeger.</param>
-        /// <param name="n">A positive ulongeger (&gt; 0).</param>
+        /// <param name="x">A nonnegative long integer.</param>
+        /// <param name="d">A nonnegative long integer.</param>
+        /// <param name="n">A positive long (&gt; 0).</param>
         /// <returns>The value of x^d mod n.</returns>
         public static ulong Compute(ulong x, ulong d, ulong n)
         {

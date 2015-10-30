@@ -22,8 +22,8 @@
 
             Console.WriteLine();
 
-            var ciphet3 = AliceVigenered();
-            BobVigeneredBack(ciphet3);
+            var ciphet3 = Alice1TimePad();
+            Bob1TimePadBack(ciphet3);
 
             Console.WriteLine();
 
@@ -135,12 +135,12 @@
             Console.WriteLine("Hehe, I got her shifted message secretly: \n {0}", whatDidSheSent);
         }
 
-        private static string AliceVigenered()
+        private static string Alice1TimePad()
         {
             return new OneTimePad(true, requireEqualKeyLength: false).Encrypt("My Secret Key", "I love you bob. See you on Friday night, dear.");
         }
 
-        private static void BobVigeneredBack(string cipher)
+        private static void Bob1TimePadBack(string cipher)
         {
             var whatDidSheSent = new OneTimePad(true, requireEqualKeyLength: false).Decrypt("My Secret Key", cipher);
             Console.WriteLine("Hehe, I got her vigener coded message secretly: \n {0}", whatDidSheSent);
