@@ -1,10 +1,10 @@
-﻿using AU.Lib;
-using AU.Sorting;
-using System;
-using System.Linq;
-
-namespace Demo
+﻿namespace Demo
 {
+    using AU.Lib;
+    using AU.Sorting;
+    using System;
+    using System.Linq;
+
     internal class Sort
     {
         public static void Demo()

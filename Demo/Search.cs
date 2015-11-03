@@ -1,8 +1,8 @@
-﻿using AU.Searching;
-using System;
-
-namespace Demo
+﻿namespace Demo
 {
+    using AU.Searching;
+    using System;
+
     internal class Search
     {
         public static void Demo()

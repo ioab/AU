@@ -1,10 +1,10 @@
-﻿using AU.GraphTheory.Dag;
-using AU.GraphTheory.Graph;
-using AU.GraphTheory.ShortestPath;
-using System;
-
-namespace Demo
+﻿namespace Demo
 {
+    using AU.GraphTheory.Dag;
+    using AU.GraphTheory.Graph;
+    using AU.GraphTheory.ShortestPath;
+    using System;
+    
     internal class GraphTheory
     {
         public static void Demo()
